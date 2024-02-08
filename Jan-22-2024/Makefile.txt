@@ -1,7 +1,0 @@
-all: taskmanager.out
-processes.o:
-    gcc -c processes.c -o processes.o
-taskmanager.out: processes.o
-    gcc taskmanager.c processes.o -o taskmanager.out
-clean:
-    rm -f *.out *.o
